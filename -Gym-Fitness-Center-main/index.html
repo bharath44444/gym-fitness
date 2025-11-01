@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym & Fitness Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Fitness</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Get Fit. Stay Healthy.</h1>
+        <a href="#contact" class="cta-btn">Sign Up Now</a>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <h2>Our Fitness Programs</h2>
+        <div class="program-cards">
+            <div class="card">
+                <h3>Strength Training</h3>
+                <p>Build muscle, increase strength, and achieve your fitness goals.</p>
+            </div>
+            <div class="card">
+                <h3>Cardio Workouts</h3>
+                <p>Boost endurance, burn calories, and improve heart health.</p>
+            </div>
+            <div class="card">
+                <h3>Yoga & Flexibility</h3>
+                <p>Enhance balance, flexibility, and mind-body wellness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign-up Form -->
+    <section class="signup" id="contact">
+        <h2>Sign Up for Membership</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone" required pattern="[0-9]{10}">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>Opening Hours: Mon-Sat, 6am - 9pm</p>
+        <p>&copy; 2025 FitLife Gym & Fitness Center</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

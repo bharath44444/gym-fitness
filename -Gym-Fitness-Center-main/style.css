@@ -1,0 +1,155 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #222;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zml0bmVzc3xlbnwwfHwwfHx8MA%3D%3D") no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-btn {
+    background: #f39c12;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Programs Section */
+.programs {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.program-cards .card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.program-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Signup Form */
+.signup {
+    background: #222;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.signup input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.signup button {
+    padding: 10px 30px;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom : 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    color: #f39c12;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .program-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
